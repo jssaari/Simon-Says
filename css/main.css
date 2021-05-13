@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', Arial;
+  margin: 0;
+  background-color: #005dff;
+}
+
+header {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #ccdfff;
+}
+
+a:hover {
+  color: #001333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.back {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+main section.score,
+main section.highscore {
+  text-align: right;
+  padding: 0 30px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #001333;
+}
+
+main section.simon {
+  padding: 15px;
+  margin: 1em auto;
+  background-color: #ccdfff;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+main section.simon > div {
+  position: absolute;
+}
+
+main section.simon > div.red {
+  left: 105px;
+  top: 190px;
+  border-radius: 50% 50% 0% 50%;
+  width: 125px;
+  height: 125px;
+  background-color: #e44444;
+}
+
+main section.simon > div.blue {
+  left: 235px;
+  top: 190px;
+  border-radius: 50% 50% 50% 0%;
+  width: 125px;
+  height: 125px;
+  background-color: #4444e4;
+}
+
+main section.simon > div.yellow {
+  left: 235px;
+  top: 320px;
+  border-radius: 0% 50% 50% 50%;
+  width: 125px;
+  height: 125px;
+  background-color: #e4e444;
+}
+
+main section.simon > div.green {
+  left: 105px;
+  top: 320px;
+  border-radius: 50% 0% 50% 50%;
+  width: 125px;
+  height: 125px;
+  background-color: #44e444;
+}
+/*# sourceMappingURL=main.css.map */

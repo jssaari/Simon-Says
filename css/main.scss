@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+$colors: (
+  primary: #005dff,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  accent: #fff6bb,
+  circle-red: rgb(228, 68, 68),
+  circle-blue: rgb(68, 68, 228),
+  circle-yellow: rgb(228, 228, 68),
+  circle-green: rgb(68, 228, 68),
+);
+
+$padding: 15px;
+$borders: 15px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Poppins', Arial;
+  margin: 0;
+  background-color: color(primary);
+}
+header {
+  padding: $padding;
+}
+a {
+  text-decoration: none;
+  color: color(primary-light);
+  &:hover {
+    color: color(primary-dark);
+    transition: 0.3s;
+  }
+  &.back {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+}
+img {
+  width: 100%;
+}
+
+main {
+  section.score,
+  section.highscore {
+    text-align: right;
+    padding: 0 $padding * 2;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: color(primary-dark);
+  }
+  section.simon {
+    padding: $padding;
+    margin: 1em auto;
+    background-color: color(primary-light);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    > div {
+      position: absolute;
+      &.red {
+        left: 105px;
+        top: 190px;
+        border-radius: 50% 50% 0% 50%;
+        width: 125px;
+        height: 125px;
+        background-color: color(circle-red);
+      }
+      &.blue {
+        left: 235px;
+        top: 190px;
+        border-radius: 50% 50% 50% 0%;
+        width: 125px;
+        height: 125px;
+        background-color: color(circle-blue);
+      }
+      &.yellow {
+        left: 235px;
+        top: 320px;
+        border-radius: 0% 50% 50% 50%;
+        width: 125px;
+        height: 125px;
+        background-color: color(circle-yellow);
+      }
+      &.green {
+        left: 105px;
+        top: 320px;
+        border-radius: 50% 0% 50% 50%;
+        width: 125px;
+        height: 125px;
+        background-color: color(circle-green);
+      }
+    }
+  }
+}
