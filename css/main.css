@@ -63,6 +63,10 @@ main section.simon > div.red {
   background-color: #e44444;
 }
 
+main section.simon > div.red:hover {
+  background: radial-gradient(rgba(228, 68, 68, 0.6), #ff0000);
+}
+
 main section.simon > div.blue {
   position: absolute;
   left: 170px;
@@ -71,6 +75,10 @@ main section.simon > div.blue {
   width: 125px;
   height: 125px;
   background-color: #4444e4;
+}
+
+main section.simon > div.blue:hover {
+  background: radial-gradient(rgba(68, 68, 228, 0.6), #4444e4);
 }
 
 main section.simon > div.yellow {
@@ -83,6 +91,10 @@ main section.simon > div.yellow {
   background-color: #e4e444;
 }
 
+main section.simon > div.yellow:hover {
+  background: radial-gradient(rgba(228, 228, 68, 0.6), #e4e444);
+}
+
 main section.simon > div.green {
   position: absolute;
   left: 40px;
@@ -91,5 +103,9 @@ main section.simon > div.green {
   width: 125px;
   height: 125px;
   background-color: #44e444;
+}
+
+main section.simon > div.green:hover {
+  background: radial-gradient(rgba(68, 228, 68, 0.6), #44e444);
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,9 +5,17 @@ $colors: (
   primary-dark: darken(#005dff, 40%),
   accent: #fff6bb,
   circle-red: rgb(228, 68, 68),
+  circle-red-trans: rgba(228, 68, 68, 0.6),
+  circle-red-bright: #ff0000,
   circle-blue: rgb(68, 68, 228),
+  circle-blue-trans: rgba(68, 68, 228, 0.6),
+  circle-blue-bright: rgba(68, 68, 228, 1),
   circle-yellow: rgb(228, 228, 68),
+  circle-yellow-trans: rgba(228, 228, 68, 0.6),
+  circle-yellow-bright: rgba(228, 228, 68, 1),
   circle-green: rgb(68, 228, 68),
+  circle-green-trans: rgba(68, 228, 68, 0.6),
+  circle-green-bright: rgba(68, 228, 68, 1),
 );
 
 $padding: 15px;
@@ -80,6 +88,12 @@ main {
         width: 125px;
         height: 125px;
         background-color: color(circle-red);
+        &:hover {
+          background: radial-gradient(
+            color(circle-red-trans),
+            color(circle-red-bright)
+          );
+        }
       }
       &.blue {
         position: absolute;
@@ -89,6 +103,12 @@ main {
         width: 125px;
         height: 125px;
         background-color: color(circle-blue);
+        &:hover {
+          background: radial-gradient(
+            color(circle-blue-trans),
+            color(circle-blue-bright)
+          );
+        }
       }
       &.yellow {
         position: absolute;
@@ -98,6 +118,12 @@ main {
         width: 125px;
         height: 125px;
         background-color: color(circle-yellow);
+        &:hover {
+          background: radial-gradient(
+            color(circle-yellow-trans),
+            color(circle-yellow-bright)
+          );
+        }
       }
       &.green {
         position: absolute;
@@ -107,6 +133,12 @@ main {
         width: 125px;
         height: 125px;
         background-color: color(circle-green);
+        &:hover {
+          background: radial-gradient(
+            color(circle-green-trans),
+            color(circle-green-bright)
+          );
+        }
       }
     }
   }
