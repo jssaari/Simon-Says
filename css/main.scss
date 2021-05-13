@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 $colors: (
   primary: #005dff,
   primary-light: lighten(#005dff, 40%),
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', Arial;
+  font-family: "Poppins", Arial;
   margin: 0;
   background-color: color(primary);
 }
@@ -64,6 +64,7 @@ main {
     color: color(primary-dark);
   }
   section.simon {
+    position: relative;
     padding: $padding;
     margin: 1em auto;
     background-color: color(primary-light);
@@ -71,34 +72,37 @@ main {
     width: 300px;
     height: 300px;
     > div {
-      position: absolute;
       &.red {
-        left: 105px;
-        top: 190px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
         border-radius: 50% 50% 0% 50%;
         width: 125px;
         height: 125px;
         background-color: color(circle-red);
       }
       &.blue {
-        left: 235px;
-        top: 190px;
+        position: absolute;
+        left: 170px;
+        top: 40px;
         border-radius: 50% 50% 50% 0%;
         width: 125px;
         height: 125px;
         background-color: color(circle-blue);
       }
       &.yellow {
-        left: 235px;
-        top: 320px;
+        position: absolute;
+        left: 170px;
+        top: 170px;
         border-radius: 0% 50% 50% 50%;
         width: 125px;
         height: 125px;
         background-color: color(circle-yellow);
       }
       &.green {
-        left: 105px;
-        top: 320px;
+        position: absolute;
+        left: 40px;
+        top: 170px;
         border-radius: 50% 0% 50% 50%;
         width: 125px;
         height: 125px;
