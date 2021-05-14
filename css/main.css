@@ -64,7 +64,7 @@ main section.simon > div.red {
 }
 
 main section.simon > div.red:hover {
-  background: radial-gradient(rgba(228, 68, 68, 0.6), #ff0000);
+  background: radial-gradient(rgba(228, 68, 68, 0.4), #ff0000);
 }
 
 main section.simon > div.blue {
@@ -78,7 +78,7 @@ main section.simon > div.blue {
 }
 
 main section.simon > div.blue:hover {
-  background: radial-gradient(rgba(68, 68, 228, 0.6), #4444e4);
+  background: radial-gradient(rgba(68, 68, 228, 0.4), #0000ff);
 }
 
 main section.simon > div.yellow {
@@ -92,7 +92,7 @@ main section.simon > div.yellow {
 }
 
 main section.simon > div.yellow:hover {
-  background: radial-gradient(rgba(228, 228, 68, 0.6), #e4e444);
+  background: radial-gradient(rgba(228, 228, 68, 0.4), #ffff42);
 }
 
 main section.simon > div.green {
@@ -106,6 +106,6 @@ main section.simon > div.green {
 }
 
 main section.simon > div.green:hover {
-  background: radial-gradient(rgba(68, 228, 68, 0.6), #44e444);
+  background: radial-gradient(rgba(68, 228, 68, 0.4), #00ff00);
 }
 /*# sourceMappingURL=main.css.map */
